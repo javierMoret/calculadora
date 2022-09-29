@@ -35,6 +35,12 @@ function calcular(){
         }
     document.getElementById("resultado").innerHTML=resultado;
 
-    
+}
 
+function concatenarOperacion(){
+    console.log(document.getElementById("resultado").innerHTML);
+    document.getElementById("n1").value= document.getElementById("resultado").innerHTML;
+    document.getElementById("resultado").value=0;
+    document.getElementById("n2").value=0;
+    
 }
