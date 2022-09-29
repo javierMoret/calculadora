@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/63e77c34c9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="fondo">
+        <div class="hueco"></div>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <form action="" class="operacion">
+                <input type="number" id="n1" class="digito" value="0">
+                <div class="grid-oper">
+                    <div class="operador">
+                            <input type="radio" value="0" name="operadores" id="">
+                            <label for=""><i class="fa-solid fa-plus"></i></label>
+                    </div>
+                    <div class="operador">
+                            <input type="radio" value="1" name="operadores" id="">
+                            <label for=""><i class="fa-solid fa-minus"></i></label>
+                    </div>
+                    <div class="operador">
+                            <input type="radio" value="2" name="operadores" id="">
+                            <label for=""><i class="fa-solid fa-xmark"></i></label>
+                    </div>
+                    <div class="operador">
+                            <input type="radio" value="3" name="operadores" id="">
+                            <label for=""><i class="fa-solid fa-divide"></i></label>
+                    </div>
+                    <div class="operador">
+                            <input type="radio" value="4" name="operadores" id="">
+                            <label for=""><i class="fa-solid fa-percent"></i></label>
+                    </div>
+                </div>
+                <input type="number" id="n2" class="digito" value="0">
+                <i class="fa-solid fa-equals"></i>
+                <p id="resultado" class="resultado">0</p>
+                <input type="button" onclick="calcular();" value="Calcular" id="boton" class="boton">
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
